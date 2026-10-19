@@ -1,0 +1,44 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "events"
+    label: "Events"
+    files:
+      - name: "events"
+        label: "Upcoming Events"
+        file: "data/events.json"
+        format: "json"
+        fields:
+          - label: "Events"
+            name: "events"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "string", hint: "Format: YYYY-MM-DD, for example 2026-12-24" }
+              - { label: "Time", name: "time", widget: "string", required: false }
+              - { label: "Location", name: "location", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+
+  - name: "bulletin"
+    label: "Bulletin"
+    files:
+      - name: "bulletin"
+        label: "Church Bulletin"
+        file: "data/bulletin.json"
+        format: "json"
+        fields:
+          - { label: "Current bulletin title", name: "current_title", widget: "string", default: "This Week's Bulletin" }
+          - { label: "Current bulletin PDF", name: "current", widget: "file", required: false }
+          - label: "Past bulletins"
+            name: "archive"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "string", hint: "Format: YYYY-MM-DD" }
+              - { label: "PDF", name: "file", widget: "file" }

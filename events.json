@@ -1,0 +1,18 @@
+{
+  "events": [
+    {
+      "title": "SAMPLE: Fellowship Meal",
+      "date": "2026-11-15",
+      "time": "12:00 PM",
+      "location": "Calvary Baptist Church",
+      "description": "Replace or delete this sample event in the admin page."
+    },
+    {
+      "title": "SAMPLE: Christmas Eve Service",
+      "date": "2026-12-24",
+      "time": "[TIME]",
+      "location": "Calvary Baptist Church",
+      "description": "Replace or delete this sample event."
+    }
+  ]
+}
