@@ -29,7 +29,10 @@ auth:
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 
 # Add site links in Decap CMS (optional)
-site_url: https://dancing-gelago-daf782.netlify.app
+site_url: Change project name
+Project name
+cariboucalvary
+https://cariboucalvary.netlify.app
 
 media_folder: "uploads"
 public_folder: "/uploads"
