@@ -8,11 +8,11 @@
       "description": "Replace or delete this sample event in the admin page."
     },
     {
-      "title": "SAMPLE: Christmas Eve Service",
+      "title": "Christmas Eve Service",
       "date": "2026-12-24",
-      "time": "[TIME]",
+      "time": "5;00",
       "location": "Calvary Baptist Church",
-      "description": "Replace or delete this sample event."
+      "description": "Join us for Calvary's Candlelight Service and light refreshments to follow"
     }
   ]
 }
