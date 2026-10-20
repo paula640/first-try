@@ -2,6 +2,7 @@
   var PAGES = [["index.html","Home"],["about.html","About"],["children.html","Children"],["events.html","Events"],["sermons.html","Sermons"],["bulletin.html","Bulletin"],["give.html","Give"],["contact.html","Contact"]];
   var FB = "https://www.facebook.com/cbccaribou";
   var YT = "https://www.youtube.com/@calvarybaptistchurchcaribo4374";
+  var CC = "https://cariboucalvary.churchcenter.com";
   var here = location.pathname.split("/").pop() || "index.html";
 
   var nav = PAGES.map(function (p) {
@@ -12,14 +13,15 @@
   var header = document.getElementById("site-header");
   if (header) header.outerHTML =
     '<header class="site"><div class="wrap"><a href="index.html"><img src="images/logo.png" alt="Calvary Baptist Church, Caribou"></a>' +
-    '<nav aria-label="Main"><ul>' + nav + '<li><a href="' + FB + '" target="_blank" rel="noopener">Facebook</a></li><li><a href="' + YT + '" target="_blank" rel="noopener">YouTube</a></li></ul></nav></div></header>';
+      '<nav aria-label="Main"><ul>' + nav + '<li><a href="' + FB + '" target="_blank" rel="noopener">Facebook</a></li><li><a href="' + YT + '" target="_blank" rel="noopener">YouTube</a></li><li><a href="' + CC + '" target="_blank" rel="noopener">MyCalvary</a></li></ul></nav></div></header>';
+
 
   var footer = document.getElementById("site-footer");
   if (footer) footer.outerHTML =
     '<footer class="site"><div class="wrap grid">' +
     '<div><strong>Calvary Baptist Church</strong><br>46 Access Hwy<br>Caribou, ME 04736<br>Mailing: PO Box 86, Caribou, ME 04736<br>Phone: <a href="tel:+12074936608">207-493-6608</a><br><a href="mailto:Info@cariboucalvary.org">Info@cariboucalvary.org</a></div>' +
     '<div><strong>Join us</strong><br>Sunday School: 8:45 AM<br>Sunday Worship: 10:00 AM<br>Tuesday Bible Study/Potluck: 6:00-7:30 PM</div>' +
-    '<div><strong>Connect</strong><br><a href="' + FB + '" target="_blank" rel="noopener">Facebook</a><br><a href="' + YT + '" target="_blank" rel="noopener">YouTube</a><br><a href="give.html">Give</a></div>' +
+    '<div><strong>Connect</strong><br><a href="' + FB + '" target="_blank" rel="noopener">Facebook</a><br><a href="' + YT + '" target="_blank" rel="noopener">YouTube</a><br><a href="' + CC + '" target="_blank" rel="noopener">MyCalvary</a><br><a href="give.html">Give</a></div>' +
     '</div><div class="wrap" style="margin-top:16px;font-size:.85rem">&copy; ' + new Date().getFullYear() + ' Calvary Baptist Church, Caribou, Maine</div></footer>';
 
   function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : s; return d.innerHTML; }
